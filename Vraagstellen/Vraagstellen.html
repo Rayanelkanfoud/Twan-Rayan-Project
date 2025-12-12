@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ / Vraag stellen - Super Mario Galaxy Movie</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <a href="../Homepage/Homepage.html">Home</a>
+        <a href="../Galerij/Galerij.html">Galerij</a>
+        <a href="../Vraagstellen/Vraagstellen.html">Vraagstellen</a>
+    </nav>
+
+    <div class="banner">
+        <h1>FAQ / Vraag stellen</h1>
+    </div>
+
+    <div class="info-section">
+        <h2>Stel je vraag</h2>
+        <p>
+            Heb je een vraag over de Super Mario Galaxy Movie? Vul dan hieronder het formulier in
+            en wij proberen je vraag zo snel mogelijk te beantwoorden.
+        </p>
+
+        <!-- Foutmelding uit je scenario (standaard verborgen, kun je later met JS tonen als je wilt) -->
+        <div class="error-message" style="display: none;">
+            Het vraagformulier kan momenteel niet worden geladen. Probeer het later opnieuw.
+        </div>
+
+        <form class="vraag-formulier">
+            <label for="naam">Naam</label>
+            <input type="text" id="naam" name="naam" required>
+
+            <label for="email">E-mailadres</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="onderwerp">Onderwerp</label>
+            <input type="text" id="onderwerp" name="onderwerp" required>
+
+            <label for="vraag">Je vraag</label>
+            <textarea id="vraag" name="vraag" rows="5" required></textarea>
+
+            <button type="submit" class="cta">Verstuur vraag</button>
+        </form>
+    </div>
+
+</body>
+</html>
