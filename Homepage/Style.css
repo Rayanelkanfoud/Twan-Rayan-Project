@@ -97,3 +97,12 @@ nav a:hover {
     font-size: 20px;
     border-radius: 8px;
 }
+
+@media (max-width: 800px) {
+  .Homepage { grid-template-columns: repeat(2, 1fr); }
+}
+ 
+@media (max-width: 500px) {
+  nav { flex-direction: column; }
+  .Homepage { grid-template-columns: 1fr; }
+}
