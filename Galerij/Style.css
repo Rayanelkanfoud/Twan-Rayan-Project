@@ -1,97 +1,106 @@
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #000000;
-    color: white;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #000000;
+  color: white;
 }
 
+/* Navigatie */
 nav {
-    background-color: #150050;
-    padding: 15px;
-    display: flex;
-    justify-content: center;
-    gap: 40px;
+  background-color: #150050;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
 }
 
 nav a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: bold;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 nav a:hover {
-    color: #610094;
+  color: #610094;
 }
 
+/* Banner */
 .banner {
-    background: linear-gradient(#3f0071, #150050);
-    height: 250px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+  background: linear-gradient(#3f0071, #150050);
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .banner h1 {
-    font-size: 40px;
-    color: #ffffff;
-    text-shadow: 0 0 10px #610094;
+  font-size: 40px;
+  color: #ffffff;
+  text-shadow: 0 0 10px #610094;
 }
 
+/* Galerij */
 .gallery {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-    padding: 30px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 30px;
 }
 
 .item {
-    background-color: #150050;
-    border: 2px solid #610094;
-    padding: 10px;
-    border-radius: 8px;
-    text-align: center;
+  background-color: #150050;
+  border: 2px solid #610094;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
 }
 
 .item img {
-    width: 100%;
-    border-radius: 6px;
+  width: 100%;
+  border-radius: 6px;
 }
 
 .item p {
-    margin-top: 10px;
-    color: #d0b3ff;
+  margin-top: 10px;
+  color: #d0b3ff;
 }
 
-.info-section {
-    background-color: #150050;
-    margin: 40px auto;
-    padding: 30px;
-    max-width: 900px;
-    border-radius: 10px;
-    color: #e6d4ff;
+/* Download knop (werkt voor <a> en <button>) */
+.download-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 14px;
+  background-color: #610094;
+  color: white;
+  text-decoration: none;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
 }
 
-.info-section h2 {
-    text-align: center;
-    color: #ffffff;
-    font-size: 28px;
-    margin-bottom: 15px;
-    text-shadow: 0 0 8px #610094;
+.download-btn:hover {
+  background-color: #3f0071;
 }
 
-.info-section p {
-    text-align: center;
-    font-size: 18px;
-    line-height: 1.6;
-    margin-bottom: 15px;
+/* Foutmelding */
+.error-text {
+  margin-top: 10px;
+  color: #ff9b9b;
+  font-size: 14px;
 }
 
+.hidden {
+  display: none;
+}
+
+/* Responsive */
 @media (max-width: 800px) {
   .gallery { grid-template-columns: repeat(2, 1fr); }
 }
- 
+
 @media (max-width: 500px) {
   nav { flex-direction: column; }
   .gallery { grid-template-columns: 1fr; }
